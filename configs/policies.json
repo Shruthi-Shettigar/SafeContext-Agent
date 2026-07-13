@@ -1,0 +1,14 @@
+{
+  "isolation_policies": {
+    "hubspot_sales_crm": {
+      "allowed_sinks": ["marketing_emails", "customer_replies"],
+      "strictly_banned_keywords": ["payroll", "invoice_total", "routing_number", "ssn", "salary"],
+      "max_entropy_threshold": 0.85
+    },
+    "quickbooks_finance": {
+      "allowed_sinks": ["internal_ledgers", "executive_dashboards"],
+      "strictly_banned_keywords": ["public_api_key", "git_token"],
+      "max_entropy_threshold": 0.90
+    }
+  }
+}
